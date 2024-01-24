@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+// 이미지도 모듈화해서 사용
+// import logo from "./logo.svg";
+// import "./App.css";
+import styled from "styled-components";
+
+// 함수 안에 html 코드를 넣으면 됨
+// 컴포넌트는 무조건 대문자로 시작해야 함
+function Header() {
+  return <Hd>header</Hd>;
+}
+
+const Hd = styled.header`
+  height: 100px;
+  background-color: yellowgreen;
+`;
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <Header />;
 }
 
 export default App;
