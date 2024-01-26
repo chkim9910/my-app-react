@@ -21,11 +21,15 @@ function Layout() {
   // 컴포넌트를 통으로 가져올 때는 하나의 태그에서 닫아주면 됨
   // 컴포넌트에 다른 걸 넣고 싶을 경우 여는 태그, 닫는 태그 2개를 써주면 됨
 
-  const navArr = [{ title: "html" }, { title: "css" }, { title: "javascript" }];
-
+  const navArr = [
+    { title: "m-html" },
+    { title: "m-css" },
+    { title: "m-javascript" },
+  ];
+  const navD = [{ title: "d-html" }, { title: "d-css" }, { title: "d-js" }];
   return (
     <div className="wrap">
-      <Header />
+      <Header logo="가을회사" nav={navD} />
       <NavMobile nav={navArr} />
       <Article title="html" />
       <Article title="css" />

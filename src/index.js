@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
+
 // import "./index.css";
 // comm.css를 설정해줄 것이므로 위의 코드는 주석 처리해줌
 // import reportWebVitals from "./reportWebVitals";
