@@ -24,8 +24,8 @@ export default function Subnav() {
               onMouseLeave={() => setSelected(null)}
               className={selected === index ? "active" : ""}
             >
-              {/* // 클릭 시, selected의 상태를 변경 
-                    // selected의 상태가 변경되면, 화면이 다시 렌더링되어 selected === index가 true가 되어 active 클래스가 추가된다. */}
+              {/*클릭 시, selected의 상태를 변경 
+                selected의 상태가 변경되면, 화면이 다시 렌더링되어 selected === index가 true가 되어 active 클래스가 추가된다. */}
               <A href="/">
                 <Icon className="item.icon">{item.icon}</Icon>
                 <P className="item.name">{item.name}</P>
@@ -34,7 +34,6 @@ export default function Subnav() {
           ))}
         </Ul>
       </div>
-      //{" "}
     </SortStyled>
   );
 }

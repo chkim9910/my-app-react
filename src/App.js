@@ -2,12 +2,14 @@ import Layout from "./Layout";
 import Subnav from "./Subnav";
 import Sort from "./Sort";
 import Comments from "./Comments";
+import Product from "./Product";
 
 export default function App() {
   return (
     <>
       <Subnav />
       <Sort />
+      <Product />
       <Comments />
       <Layout />
     </>
