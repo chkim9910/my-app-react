@@ -3,10 +3,12 @@ import Subnav from "./Subnav";
 import Sort from "./Sort";
 import Comments from "./Comments";
 import Product from "./Product";
+import Event from "./Event";
 
 export default function App() {
   return (
     <>
+      <Event />
       <Subnav />
       <Sort />
       <Product />
