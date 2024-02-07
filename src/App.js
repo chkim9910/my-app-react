@@ -4,15 +4,29 @@ import Sort from "./Sort";
 import Comments from "./Comments";
 import Product from "./Product";
 import Event from "./Event";
+import State from "./State";
+import SetNumber from "./SetNumber";
+import Menu from "./Menu";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faCamera } from "@fortawesome/free-solid-svg-icons";
 
 export default function App() {
   return (
     <>
+      <State />
+      <hr />
+      <SetNumber />
+      <hr />
       <Event />
+      <hr />
+      <Menu />
+      <hr />
       <Subnav />
+      <hr />
       <Sort />
       <Product />
       <Comments />
+      <hr />
       <Layout />
     </>
   );
