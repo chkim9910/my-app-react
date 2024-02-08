@@ -7,6 +7,7 @@ import Event from "./Event";
 import State from "./State";
 import SetNumber from "./SetNumber";
 import Menu from "./Menu";
+import Switch from "./Switch";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faCamera } from "@fortawesome/free-solid-svg-icons";
 
@@ -14,6 +15,8 @@ export default function App() {
   return (
     <>
       <State />
+      <hr />
+      <Switch />
       <hr />
       <SetNumber />
       <hr />
