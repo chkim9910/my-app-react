@@ -8,12 +8,15 @@ import State from "./State";
 import SetNumber from "./SetNumber";
 import Menu from "./Menu";
 import Switch from "./Switch";
+import UsersList from "./api/UsersList";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faCamera } from "@fortawesome/free-solid-svg-icons";
 
 export default function App() {
   return (
     <>
+      <UsersList />
+      <hr />
       <State />
       <hr />
       <Switch />
