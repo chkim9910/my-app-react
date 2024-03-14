@@ -9,12 +9,16 @@ import SetNumber from "./SetNumber";
 import Menu from "./Menu";
 import Switch from "./Switch";
 import UsersList from "./api/UsersList";
+import Arrangement from "./Arrangement";
+import CounterApp from "./counter/CounterApp";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faCamera } from "@fortawesome/free-solid-svg-icons";
 
 export default function App() {
   return (
     <>
+      <CounterApp />
+      <Arrangement />
       <UsersList />
       <hr />
       <State />
