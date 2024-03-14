@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Counter from "./Counter";
 import Viewer from "./Viewer";
-import { css } from "@emotion/react";
+import { Input } from "@chakra-ui/react";
+// import { css } from "@emotion/react";
 
 const CounterApp = () => {
   const [count, setCount] = useState(0);
@@ -9,7 +10,14 @@ const CounterApp = () => {
     setCount(count + value);
   };
 
-  const color = "gray";
+  const [text, setText] = useState("");
+  const changeText = (e) => {
+    setText(e.target.value);
+  };
+
+  useEffect(() => {
+    console.log("update!", count, text);
+  }, [count, text]);
 
   return (
     <>
@@ -20,14 +28,16 @@ const CounterApp = () => {
         </div>
         <Viewer count={count} />
         <Counter handleCount={handleCount} />
+        <Input type="text" value={text} onChange={changeText} />
       </div>
 
       <style jsx>{`
         .counter-container {
           width: 500px;
           height: 200px;
-          padding: 10px;
+          padding: 20px;
           background: paleturquoise;
+          border-radius: 20px;
         }
         .txt-box {
           display: flex;
