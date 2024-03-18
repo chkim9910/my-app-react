@@ -11,12 +11,14 @@ import Switch from "./Switch";
 import UsersList from "./api/UsersList";
 import Arrangement from "./Arrangement";
 import CounterApp from "./counter/CounterApp";
+import TodoApp from "./TodoApp";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faCamera } from "@fortawesome/free-solid-svg-icons";
 
 export default function App() {
   return (
     <>
+      <TodoApp />
       <CounterApp />
       <Arrangement />
       <UsersList />
